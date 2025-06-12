@@ -1,0 +1,13 @@
+.logindiv{
+    padding: 19px 30px;
+    background: antiquewhite;
+    margin: 85px auto;
+    width: 400px;
+    border-radius: 13px;
+}
+.errormessage{
+    background: indianred;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+}
