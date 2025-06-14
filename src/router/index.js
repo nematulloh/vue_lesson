@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LayoutDefault from '@/layouts/LayoutDefault.vue'
 import LayoutLogin from '@/layouts/LayoutLogin.vue'
 
-// Sahifalar
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import LoginView from '@/views/Login.vue'
