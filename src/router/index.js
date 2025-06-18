@@ -6,6 +6,7 @@ import LayoutLogin from '@/layouts/LayoutLogin.vue'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import LoginView from '@/views/Login.vue'
+import Prixodcreate from '@/views/Prixodcreate.vue'
 
 const routes = [
   {
@@ -21,6 +22,11 @@ const routes = [
         path: 'about',
         name: 'about',
         component: AboutView,
+      },
+      {
+        path: '/prixodcreate',
+        name: 'prixod',
+        component: Prixodcreate,
       },
     ],
   },

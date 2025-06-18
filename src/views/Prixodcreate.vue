@@ -3,7 +3,6 @@
 </script>
 
 <template>
-                        <router-link class="btn btn-primary" to="/prixodcreate">+</router-link>
   <table class="table table-bordered">
     <thead>
       <tr>
