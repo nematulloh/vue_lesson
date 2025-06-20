@@ -21,7 +21,7 @@
         <td>{{item.sklad.name}}</td>
         <td> <span v-if="item.kontragent">{{item.kontragent.name}}</span></td>
         <td>{{item.summa}}</td>
-        <td>{{Dates(item.created_at)}}</td>
+        <td>{{Dates(item.datetime)}}</td>
         <td>
           <button type="button" @click="Trash(item.id)">
             <i class="bi bi-trash"></i>
@@ -47,8 +47,10 @@
         'error_message': "qale"
       }
     },
-    mounted() {
+    created(){
       this.Data();
+    },
+    mounted() {
       setInterval(() => {
         this.error = false;
       }, 3000);
@@ -94,8 +96,9 @@
       let self = this;
       self.$axios({
         method: "get",
-        url: "api/v1/prixod"
+        url: "api/v1/kontragent-pay"
       }).then(function (response) {
+        console.log(response.data);
         self.data = response.data;
       });
     },
@@ -103,7 +106,7 @@
       let self = this;
       self.$axios({
         method: "delete",
-        url: "api/v1/prixod/id/"+id
+        url: "api/v1/kontragent-pay/id/"+id
       }).then(function (response) {
         self.Data();
       });
