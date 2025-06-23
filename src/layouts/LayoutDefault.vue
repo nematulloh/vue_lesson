@@ -10,6 +10,12 @@
             <router-link class="nav-link text-white" to="/about">ℹ️ About</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link text-white" to="/unit">ℹ️ Olchov birligi</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-white" to="/extraunit">ℹ️ Qoshimcha Olchov birligi</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link text-white" to="/login">Login</router-link>
           </li>
         </ul>
